@@ -19,19 +19,21 @@
             <div>
                 <input type="text" id = "budgetNum" placeholder = "budget amount">
                 <br>
-                <button>Create Budget</button>
+                <button class = "createButton" onclick = "displayBudget()">Create Budget</button>
             </div>
             <div>
                 <input type="text" id = "itemName" placeholder = "expense item">
                 <br>
                 <input type="text" id = "itemNum" placeholder = "expense amount">
                 <br>
-                <button>add expense item</button>
+                <button class = "itemButton" onclick = "updateBudget()">add expense item</button>
             </div>
         </div>
-        <div class = "display"></div>
-
+        <div class = "display">
+            <div id = "budgetDisplay"></div>
+            <div id = "remDisplay"></div>
+            <div id = "expenses"></div>
         </div>
-    
+        
 </body>
 </html>
