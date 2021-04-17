@@ -1,0 +1,46 @@
+* {
+    background-color: #FFEFD5;
+    font-family: 'Quicksand', sans-serif;
+    padding: 5px;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6rem 1fr;
+    grid-template-areas: 
+            'h h'
+            'c d';
+    width: 100vw;
+    height: 100vh;
+}
+
+.create {
+    grid-area: c;
+}
+
+h1 {
+    color: #FF6347;
+}
+
+button {
+    margin: 1px;
+    background-color: #EEE8AA;
+}
+
+.display {
+    grid-area: d;
+}
+
+.header {
+    grid-area: h;
+}
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+}
+
